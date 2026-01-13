@@ -11,6 +11,6 @@ const router = express.Router();
 router.get("/", DictionaryGet);
 router.get("/:id", DictionaryGetById);
 router.post("/", DictionaryCreate);
-router.put("/:id", DictionaryUpdate);
+router.patch("/:id", DictionaryUpdate);
 router.delete("/:id", DictionaryDelete);
 export default router;
